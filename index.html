@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XClouds AI Hosting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+
+  <!-- Gradient Backdrop -->
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute left-1/2 top-0 h-[50rem] w-[50rem] -translate-x-1/2 rounded-full bg-gradient-to-br from-indigo-500/20 via-fuchsia-500/10 to-cyan-500/10 blur-3xl"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-slate-950/70 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <div class="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 font-black">X</div>
+        <span class="text-lg font-semibold tracking-tight">
+          XClouds <span class="text-fuchsia-400">AI</span>
+        </span>
+      </div>
+      <div class="hidden items-center gap-6 md:flex">
+        <a class="hover:text-white/80" href="#home">Home</a>
+        <a class="hover:text-white/80" href="#mc">Game Hosting</a>
+        <a class="hover:text-white/80" href="#vps">VPS Hosting</a>
+        <a class="hover:text-white/80" href="#login">Login</a>
+        <a class="hover:text-white/80" href="#contact">Support</a>
+        <button class="rounded-2xl border border-white/10 px-3 py-1.5 text-sm hover:bg-white/5">Status</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="mx-auto max-w-7xl px-4 py-16 text-center">
+    <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-xs text-white/80">
+      <span class="h-2 w-2 rounded-full bg-emerald-400"></span> Game Server Hosting
+    </div>
+    <h1 class="bg-gradient-to-b from-white to-white/70 bg-clip-text text-4xl font-extrabold leading-tight text-transparent md:text-6xl">
+      Minecraft & VPS <span class="text-fuchsia-300">Server Hosting</span>
+    </h1>
+    <p class="mt-4 text-white/70">
+      Experience ultra-fast hosting with enterprise-grade hardware, instant deployment, and 24/7 expert support. Start your adventure today!
+    </p>
+    <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg shadow-black/20">
+        <div class="text-lg font-semibold">DDoS Protection</div>
+        <div class="text-sm text-white/70">Multi-layer security</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg shadow-black/20">
+        <div class="text-lg font-semibold">&lt; 5 mins</div>
+        <div class="text-sm text-white/70">Instant deployment</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg shadow-black/20">
+        <div class="text-lg font-semibold">5+ Regions</div>
+        <div class="text-sm text-white/70">Global coverage</div>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg shadow-black/20">
+        <div class="text-lg font-semibold">99.9%</div>
+        <div class="text-sm text-white/70">Guaranteed SLA</div>
+      </div>
+    </div>
+    <div class="mt-10 flex justify-center gap-4">
+      <a href="#mc" class="rounded-2xl bg-indigo-500/80 px-5 py-3 font-semibold hover:bg-indigo-500">
+        Browse Minecraft Plans
+      </a>
+      <a href="#vps" class="rounded-2xl border border-white/10 px-5 py-3 font-semibold hover:bg-white/10">
+        Browse VPS Plans
+      </a>
+    </div>
+  </section>
+
+  <!-- Minecraft Plans -->
+  <section id="mc" class="mx-auto max-w-7xl px-4 py-12">
+    <div class="mb-6 flex items-end justify-between gap-4">
+      <div>
+        <p class="text-xs text-white/60">Budget & Premium</p>
+        <h2 class="text-2xl font-bold md:text-3xl">Minecraft Hosting</h2>
+      </div>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <script>
+        const mcPlans = [
+          {name:"Creeper Plan",price:100,ram:"2 GB RAM",cpu:"100% CPU",ssd:"10 GB SSD",conn:"500 Mbps", img:"https://static.wikia.nocookie.net/villainsfanon/images/a/ac/ElementAnimatonCreepers.png/revision/latest?cb=20241014185030"},
+          {name:"Zombie Plan",price:200,ram:"3 GB RAM",cpu:"200% CPU",ssd:"20 GB SSD",conn:"500 Mbps", img:"https://i.pinimg.com/736x/52/c9/cf/52c9cfd950cffe1f325f5b6a0c005f60.jpg"},
+          {name:"Skeleton Plan",price:300,ram:"4 GB RAM",cpu:"300% CPU",ssd:"30 GB SSD",conn:"1 Gbps", img:"https://static.wikia.nocookie.net/a-minecraft-movie/images/9/93/Fake_skleton.png/revision/latest?cb=20250420145746"},
+          {name:"Iron Golem Plan",price:400,ram:"5 GB RAM",cpu:"400% CPU",ssd:"40 GB SSD",conn:"1 Gbps", img:"https://cdn.dribbble.com/userupload/21161271/file/original-a2896d4dd5703fa9f39d59c99b6e08e5.png?resize=752x&vertical=center"},
+          {name:"Ender Plan",price:500,ram:"6 GB RAM",cpu:"500% CPU",ssd:"50 GB SSD",conn:"1 Gbps", img:"https://i.redd.it/lod6qzm39zoe1.jpeg"},
+          {name:"Wither Plan",price:600,ram:"8 GB RAM",cpu:"600% CPU",ssd:"60 GB SSD",conn:"2 Gbps", img:"https://i.ytimg.com/vi/pYL0ow7B8Tc/maxresdefault.jpg"},
+          {name:"Warden Plan",price:700,ram:"10 GB RAM",cpu:"700% CPU",ssd:"80 GB SSD",conn:"2 Gbps", img:"https://play-lh.googleusercontent.com/wEcJx1TDtLgR6alxkYUEKFF0kX9YdJKNFouFDoAEZ0EgraiqmSuBvmSwG21Q1xaJdDi5"},
+          {name:"Dragon Plan",price:800,ram:"12 GB RAM",cpu:"800% CPU",ssd:"100 GB SSD",conn:"2 Gbps", img:"https://i.redd.it/hu8z7fmwrqw41.png"},
+          {name:"Herobine Plan",price:900,ram:"16 GB RAM",cpu:"900% CPU",ssd:"120 GB SSD",conn:"5 Gbps", img:"https://i.ytimg.com/vi/3qP_F1OYl0A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDakAZeSSWpgLkBzV0KoH4ozrygVA"},
+          {name:"TechnoBlade Plan",price:1000,ram:"20 GB RAM",cpu:"1000% CPU",ssd:"150 GB SSD",conn:"5 Gbps", img:"https://wallpapers.com/images/hd/technoblade-anime-portrait-z6qb879ihjerwsxh.jpg"},
+          {name:"Storm Plan",price:2000,ram:"32 GB RAM",cpu:"2000% CPU",ssd:"250 GB SSD",conn:"10 Gbps", img:"https://i.ytimg.com/vi/5Xvk9nHT_qY/maxresdefault.jpg"}
+        ];
+
+        mcPlans.forEach(plan=>{
+          document.write(`
+            <div class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] p-6 shadow-xl shadow-black/20">
+              <img src="${plan.img}" alt="${plan.name}" class="w-full h-40 object-cover rounded-xl mb-4">
+              <h3 class="text-lg font-semibold">${plan.name}</h3>
+              <div class="mt-2 flex items-baseline gap-2">
+                <div class="text-3xl font-extrabold">₹${(plan.price*0.9).toFixed(0)}</div>
+                <div class="text-xs text-emerald-400">10% off</div>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm text-white/80">
+                <li>${plan.ram}</li>
+                <li>${plan.cpu}</li>
+                <li>${plan.ssd}</li>
+                <li>${plan.conn}</li>
+              </ul>
+              <button onclick="goDiscord()" class="mt-5 w-full rounded-2xl bg-gradient-to-r from-indigo-500 to-fuchsia-500 px-4 py-3 font-semibold hover:opacity-95">
+                Deploy Now →
+              </button>
+            </div>
+          `)
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- VPS Plans -->
+  <section id="vps" class="mx-auto max-w-7xl px-4 py-12">
+    <div class="mb-6 flex items-end justify-between gap-4">
+      <div>
+        <p class="text-xs text-white/60">All Locations</p>
+        <h2 class="text-2xl font-bold md:text-3xl">Virtual Private Servers</h2>
+      </div>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <script>
+        const vpsPlans = [
+          {name:"Budget VPS 1",price:899,ram:"1 GB RAM",cpu:"1 vCPU",ssd:"20 GB SSD",conn:"100 Mbit/s"},
+          {name:"Budget VPS 2",price:999,ram:"2 GB RAM",cpu:"2 vCPU",ssd:"40 GB SSD",conn:"200 Mbit/s"},
+          {name:"Mini VPS",price:499,ram:"1 GB RAM",cpu:"1 vCPU",ssd:"30 GB SSD",conn:"100 Mbit/s"},
+          {name:"Starter VPS",price:399,ram:"512 MB RAM",cpu:"1 vCPU",ssd:"20 GB SSD",conn:"50 Mbit/s"},
+          {name:"Pro VPS",price:1099,ram:"4 GB RAM",cpu:"4 vCPU",ssd:"80 GB SSD",conn:"500 Mbit/s"},
+          {name:"Enterprise VPS",price:2099,ram:"8 GB RAM",cpu:"8 vCPU",ssd:"200 GB SSD",conn:"1 Gbps"}
+        ];
+        vpsPlans.forEach(plan=>{
+          const discounted = plan.price-205;
+          document.write(`
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20">
+              <h3 class="text-lg font-semibold">${plan.name}</h3>
+              <div class="mt-2 flex items-baseline gap-2">
+                <div class="text-3xl font-extrabold">₹${discounted}</div>
+                <div class="text-xs text-emerald-400">₹${plan.price} - 205 off</div>
+              </div>
+              <ul class="mt-4 space-y-2 text-sm text-white/80">
+                <li>${plan.cpu}</li>
+                <li>${plan.ram}</li>
+                <li>${plan.ssd}</li>
+                <li>${plan.conn}</li>
+              </ul>
+              <button onclick="goDiscord()" class="mt-5 w-full rounded-2xl bg-white/10 px-4 py-3 font-semibold hover:bg-white/20">
+                Deploy Now →
+              </button>
+            </div>
+          `)
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+  <section id="login" class="mx-auto max-w-md px-4 py-12">
+    <h2 class="text-2xl font-bold mb-6 text-center">Login to Your Account</h2>
+    <form class="space-y-4 bg-white/5 p-6 rounded-2xl border border-white/10 shadow-lg shadow-black/20">
+      <div>
+        <label class="block text-sm mb-1" for="email">Email</label>
+        <input type="email" id="email" class="w-full rounded-lg bg-white/10 px-3 py-2 text-white/90 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="you@example.com" required>
+      </div>
+      <div>
+        <label class="block text-sm mb-1" for="password">Password</label>
+        <input type="password" id="password" class="w-full rounded-lg bg-white/10 px-3 py-2 text-white/90 focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="********" required>
+      </div>
+      <button type="submit" class="w-full rounded-2xl bg-indigo-500/80 py-2 font-semibold hover:bg-indigo-500">Login</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="mt-20 border-t border-white/5 bg-slate-950/60">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:grid-cols-4">
+      <div>
+        <div class="text-2xl font-semibold">XClouds <span class="text-fuchsia-400">AI</span></div>
+        <p class="mt-2 text-sm text-white/70">
+          Elevating online experiences with premium Discord, Minecraft, and VPS hosting solutions and unparalleled performance.
+        </p>
+      </div>
+      <div>
+        <div class="mb-2 font-semibold">Products</div>
+        <ul class="space-y-2 text-white/70">
+          <li><a href="#mc" class="hover:text-white">Game Hosting</a></li>
+          <li><a href="#vps" class="hover:text-white">VPS Services</a></li>
+          <li><a onclick="goDiscord()" class="hover:text-white cursor-pointer">Bot Hosting</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mb-2 font-semibold">Support</div>
+        <ul class="space-y-2 text-white/70">
+          <li><a onclick="goDiscord()" class="hover:text-white cursor-pointer">Server Status</a></li>
+          <li><a onclick="goDiscord()" class="hover:text-white cursor-pointer">Contact Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="mb-2 font-semibold">Legal</div>
+        <ul class="space-y-2 text-white/70">
+          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Usage Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/5 py-6 text-center text-sm text-white/60">
+      © <span id="year"></span> XClouds AI. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    const discordInvite = "https://discord.gg/PT9tfkR2Wa";
+    function goDiscord() {
+      window.open(discordInvite, "_blank");
+    }
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
